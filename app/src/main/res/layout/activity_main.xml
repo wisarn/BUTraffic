@@ -36,7 +36,8 @@
                 android:layout_height="205dp"
                 android:id="@+id/listView"
                 android:layout_weight="0.84"
-                android:layout_margin="30dp" />
+                android:layout_margin="30dp"
+                android:background="#83f9f6f5" />
 
         </LinearLayout>
     </FrameLayout>
