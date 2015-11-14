@@ -1,6 +1,8 @@
 package th.ac.bu.p.wisarn.butraffic;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -31,11 +33,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 // sound effect
-                MediaPlayer buttonPlayer = MediaPlayer.create(getBaseContext(),R.raw.end_game);
+                MediaPlayer buttonPlayer = MediaPlayer.create(getBaseContext(),R.raw.lion);
                 buttonPlayer.start();
 
                 // Intent to WebView
-
+                Intent objIntent = new Intent(Intent.ACTION_VIEW);
+                objIntent.setData(Uri.parse("http://www.manager.co.th"));
+                startActivity(objIntent);
             }
         });
     }

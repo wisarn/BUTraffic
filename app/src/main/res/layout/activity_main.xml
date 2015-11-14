@@ -49,4 +49,11 @@
         android:id="@+id/button"
         android:layout_alignParentBottom="true" />
 
+    <ImageView
+        android:layout_width="@dimen/image"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
